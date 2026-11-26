@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kit de Consultorio - Psicología Independiente</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Hero -->
+  <header>
+    <h1>Kit de consultorio</h1>
+    <p>Herramientas psicológicas para psicólogos independientes</p>
+  </header>
+
+  <!-- Herramientas -->
+  <section id="herramientas" class="section">
+    <h2>Herramientas</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>Consentimiento informado</h3>
+        <p>Genera documentos de consentimiento informado con datos del profesional, encuadre terapéutico, honora­rios, políticas de cancelación y confidencialidad.</p>
+        <a href="herramientas/consentimiento_informado.py" class="card-link">Ver herramienta</a>
+      </article>
+
+      <article class="card">
+        <h3>Notas de sesión</h3>
+        <p>Organiza notas de sesión en formato estructurado (S-O-A-P): motivo, observaciones, intervenciones y plan. Guarda archivos locales automáticamente.</p>
+        <a href="herramientas/notas_sesion.py" class="card-link">Ver herramienta</a>
+      </article>
+
+      <article class="card">
+        <h3>Tareas entre sesiones</h3>
+        <p>Genera tareas o ejercicios personalizados entre sesiones según el objetivo terapéutico (ansiedad, sueño, manejo del enojo, hábitos saludables).</p>
+        <a href="herramientas/tareas_entre_sesiones.py" class="card-link">Ver herramienta</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Agente -->
+  <section id="agente" class="section">
+    <h2>Agente de terminal</h2>
+    <p>Un agente sencillo por consola. El usuario escribe lo que necesita, el agente decide cuál de las 3 herramientas usar, pide los datos que falten y devuelve el resultado. Sin Telegram, sin servidores, sin interfaz externa.</p>
+    <a href="docs/uso_agente.md" class="card-link">Ver documentación</a>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2>Skills de apoyo</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>Ética y confidencialidad</h3>
+        <p>Principios de confidencialidad y límites éticos para la práctica psicológica. Apoyo en la identificación de información sensible y recordatorio de los límites de confidencialidad.</p>
+        <a href="skills/etica-confidencialidad/SKILL.md" class="card-link">Ver SKILL.md</a>
+      </article>
+
+      <article class="card">
+        <h3>Lenguaje empático</h3>
+        <p>Transformación de lenguaje técnico o formal a un tono más empático y cálido, manteniendo el profesionalismo en la comunicación con consultantes.</p>
+        <a href="skills/lenguaje-empatico/SKILL.md" class="card-link">Ver SKILL.md</a>
+      </article>
+
+      <article class="card">
+        <h3>Redacción profesional</h3>
+        <p>Normalización de texto a formato profesional: corrección de informalidades, terminología psicológica estandarizada y formato coherente para documentos y informes.</p>
+        <a href="skills/redaccion-profesional/SKILL.md" class="card-link">Ver SKILL.md</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Cómo usarlo -->
+  <section id="usarlo" class="section">
+    <h2>Cómo usarlo</h2>
+    <ol>
+      <li>Clona o descarga este repositorio.</li>
+      <li>Ejecuta <code>python3 kit.py</code> en la terminal para acceder al menú principal.</li>
+      <li>Selecciona una herramienta (1: consentimiento, 2: notas de sesión, 3: tareas entre sesiones).</li>
+      <li>Sigue las instrucciones en pantalla para generar documentos, notas o tareas.</li>
+      <li>Los resultados se guardan como archivos de texto en el directorio correspondiente.</li>
+    </ol>
+  </section>
+
+  <footer>
+    <a href="URL_REPO_AQUI" target="_blank" class="github-btn">Repositorio GitHub</a>
+    <p>Este kit apoya el trabajo del profesional psicológico y no reemplaza su criterio clínico.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+/* Landing Page - Kit de Consultorio */
+:root {
+  --bg: #f8f9fa;
+  --bg-card: #ffffff;
+  --text: #2c3e50;
+  --text-light: #7f8c8d;
+  --accent: #3498db;
+  --accent-hover: #2980b9;
+  --border: #d5d8dc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img, picture { max-width: 100%; display: block; }
+
+/* Hero */
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--bg-card);
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+header p {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Secciones */
+.section {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: var(--text);
+}
+
+/* Cards grid */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 480px) {
+  .cards { grid-template-columns: 1fr 1fr; }
+}
+
+@media (min-width: 800px) {
+  .cards { grid-template-columns: 1fr 1fr 1fr; }
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 30px 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+  color: var(--accent);
+}
+
+.card p {
+  color: var(--text-light);
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background: var(--accent);
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.card-link:hover {
+  background: var(--accent-hover);
+}
+
+/* Agente section */
+.agent-desc {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+/* Skills cards */
+.skills .cards {
+  gap: 24px;
+}
+
+.skills .card {
+  padding: 24px 20px;
+  text-align: center;
+}
+
+.skills .card h3 {
+  margin: 16px 0 12px;
+  font-size: 1.2rem;
+}
+
+/* Cómo usarlo */
+.uso ol {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+.uso li {
+  margin-bottom: 12px;
+  line-height: 1.8;
+}
+
+.uso code {
+  background: #ecf0f1;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: ui-monospace, monospace;
+}
+
+/* Footer */
+footer {
+  max-width: 860px;
+  margin: 60px auto 0;
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 1px solid var(--border);
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 10px 0 0;
+}
+
+/* Botón GitHub */
+.github-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 24px;
+  background: var(--accent);
+  color: #ffffff;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.github-btn:hover {
+  background: var(--accent-hover);
+}
+
+/* Nota ética */
+.ethical-note {
+  margin-top: 20px;
+  padding: 12px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #5d6d7e;
+  text-align: center;
+}
+
+/* Responsive minor adjustments */
+@media (max-width: 480px) {
+  .section { padding: 30px 15px; }
+  header { padding: 40px 15px; }
+  .card { padding: 20px 15px; }
+  .card h3 { font-size: 1.1rem; }
+  .github-btn { width: 100%; padding: 12px; font-size: 1rem; }
+}
